@@ -20,12 +20,12 @@
 </template>
 
 <script>
-import { compApi } from "@/compositionapi/compApi";
+import { loginApi } from "@/compositionapi/loginApi";
 
 export default {
   name: "homeView",
   setup() {
-    const { blogs, user } = compApi();
+    const { blogs, user } = loginApi();
     return {
       blogs,
       user,

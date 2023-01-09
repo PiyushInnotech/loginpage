@@ -1,7 +1,7 @@
 import { createStore } from "vuex";
 
 //firebase 
-import { auth } from '../firebase/config.js'
+import { auth } from '../env/firebaseConfig.js'
 import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,

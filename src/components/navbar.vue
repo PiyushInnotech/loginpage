@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import { compApi } from "@/compositionapi/compApi";
+import { loginApi } from "@/compositionapi/loginApi";
 export default {
   name: "navBar",
   setup() {
-    const { handleLogout, user, authUser } = compApi();
+    const { handleLogout, user, authUser } = loginApi();
 
     return { handleLogout, user, authUser };
   },

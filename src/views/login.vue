@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import { compApi } from "../compositionapi/compApi.js";
+import { loginApi } from "../compositionapi/loginApi.js";
 
 export default {
   name: "logIn",
   setup() {
-    const { email, password, handleLogin, error } = compApi();
+    const { email, password, handleLogin, error } = loginApi();
 
     return { handleLogin, email, password, error };
   },

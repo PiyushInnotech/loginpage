@@ -2,7 +2,7 @@ import { computed, ref } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router"
 
-export const compApi = () => {
+export const loginApi = () => {
     const email = ref("");
     const password = ref("");
     const store = useStore();
